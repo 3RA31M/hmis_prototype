@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏥 Prototype</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="side-bar">
+
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" id="logo"><i class="fa-solid fa-laptop-medical"></i></a>
+      <h1>CareNest</h1>
+    </header>
+
+    <!-- Menu -->
+    <div class="menu">
+
+      <!-- Dashboard -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-house"></i>Dashboard
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Overview</a>
+          <a href="" class="sub-item">Notifications</a>
+          <a href="" class="sub-item">Statistics</a>
+        </div>
+      </div>
+
+      <!-- Appointments -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-book"></i>Appointments
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="appointment.html" class="sub-item">Add Appointments</a>
+          <a href="" class="sub-item">Today's Schedule</a>
+          <a href="" class="sub-item">Appointment History</a>
+        </div>
+      </div>
+
+      <!-- Patients -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-hospital-user"></i>Patients
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="opd_patient.html" class="sub-item">Add OPD Patient</a>
+          <a href="ipd_patient.html" class="sub-item">Add IPD Patient</a>
+          <a href="" class="sub-item">Patient Records</a>
+          <a href="" class="sub-item">Billing Information</a>
+        </div>
+      </div>
+
+      <!-- Doctors -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-stethoscope"></i>Doctors
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Add Doctor</a>
+          <a href="" class="sub-item">Doctor List</a>
+          <a href="" class="sub-item">Doctor Schedule</a>
+          <a href="" class="sub-item">Performance History</a>
+        </div>
+      </div>
+
+      <!-- Payments -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-wallet"></i>Payments
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Pending Payments</a>
+          <a href="" class="sub-item">Payment History</a>
+        </div>
+        
+      </div>
+
+        <!-- Room Allotments -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-bed"></i>Room Allotments
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Allotted Rooms</a>
+          <a href="" class="sub-item">New Allotment</a>
+          <a href="" class="sub-item">Available Rooms</a>
+          <a href="" class="sub-item">Under Maintenance</a>
+        </div>
+        
+      </div>
+    
+
+      <!-- Settings -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-gear"></i>Settings</a></div>
+      </div>
+  </div>
+  <div class="container">
+
+
+  </div>
+
+
+  <!-- add patient container -->
+  <div class="container-add-pat">
+    <div class="container1">
+        <h2>Enter details Of the patient</h2><br><br>
+  <form class="form">
+
+    <label for="prefix">Prefix</label>
+    <select name="prefiix" id="prefix">
+      <option value="Mr.">Mr.</option>
+      <option value="Mrs.">Mrs.</option>
+      <option value="Miss">Miss.</option>
+      <option value="Ms">Ms.</option>
+      <option value="Mx.">Mx.</option>
+      <option value="Dr.">Dr.</option>
+      <option value="Prof.">Prof.</option>
+      <option value="Er.">Er.</optioin>
+    </select>
+  
+    
+    <label for="name">Full Name :</label>
+    <input type="text" id="name" placeholder="Name" required> <br> <br>
+
+    <div class="phoneno">
+      <label for="Phone NO">Phone.No</label>
+      <input type="number" id="Phone NO" placeholder="Phone no" required>
+    </div>
+
+    <div class="email">
+      <label for="Email">E-mail</label>
+      <input type="text" id="Email" placeholder="E-mail"> <br> <br>
+    </div>
+
+
+    <label for="gender">Gender</label>
+    <select name="gender" id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Others">Others</option>
+    </select>
+
+    <div class="age">
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Age" required> <br> <br>
+    </div>
+
+    <div class="dob">
+      <label for="date">DOB</label>
+      <input type="date" id="date" placeholder="DOB"> <br> <br>
+    </div>
+    
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Address"> <br> <br>
+
+    <label for="maritial-status">Maritial Status</label>
+    <select name="maritial-status" id="maritial-status">
+      <option value="Married">Married</option>
+      <option value="Unmarried">Unmarried</option>
+    </select> <br> <br>
+
+    <label for="spouse">Spouse</label>
+    <input type="text" id="spouse" placeholder="Spouse"> <br> <br>
+
+    <label for="doctor">Select Doctor</label>
+    <select name="doctor" id="doctor">
+      <option value="doctor">Dr. Brabim</option>
+      <option value="doctor">Dr. Dipesh</option>
+      <option value="doctor">Dr. Ryohan</option>
+    </select>
+
+    <div class="floor">
+        <label for="floor">Select Floor</label>
+        <select name="floor" id="floor">
+            <option value=""></option>
+        </select>
+    </div>
+
+    <div class="room-no">
+        <label for="room-no">Select Room No. </label>
+        <select name="room-no" id="room-no">
+            <option value=""></option>
+        </select>
+    </div>
+
+   <div class="bed">
+    <label for="bed">Select Bed</label>
+    <select name="bed" id="bed">
+        <option value=""></option>
+    </select>
+
+   </div> 
+
+   <div class="ipd_submit">
+    <button type="submit">Submit</button><br>
+   </div> 
+
+  </form>
+    </div>
+  </div>
+
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+  <script>
+    // jquery for sub-menus
+    $('.sub-btn').click(function(){
+      $(this).next('.sub-menu').slideToggle();
+      $(this).find('.dropdown').toggleClass('rotate');
+    })
+  </script>
+
+</body>
+</html>

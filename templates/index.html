@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="side-bar">
+
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" id="logo"><i class="fa-solid fa-laptop-medical"></i></a>
+      <h1>CareNest</h1>
+    </header>
+
+    <!-- Menu -->
+    <div class="menu">
+
+      <!-- Dashboard -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-house"></i>Dashboard
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Overview</a>
+          <a href="" class="sub-item">Notifications</a>
+          <a href="" class="sub-item">Statistics</a>
+        </div>
+      </div>
+
+      <!-- Appointments -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-book"></i>Appointments
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="appointment.html" class="sub-item">Add Appointments</a>
+          <a href="" class="sub-item">Today's Schedule</a>
+          <a href="" class="sub-item">Appointment History</a>
+        </div>
+      </div>
+
+      <!-- Patients -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-hospital-user"></i>Patients
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="opd_patient.html" class="sub-item">Add OPD Patient</a>
+          <a href="ipd_patient.html" class="sub-item">Add IPD Patient</a>
+          <a href="" class="sub-item">Patient Records</a>
+          <a href="" class="sub-item">Billing Information</a>
+        </div>
+      </div>
+
+      <!-- Doctors -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-stethoscope"></i>Doctors
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Add Doctor</a>
+          <a href="" class="sub-item">Doctor List</a>
+          <a href="" class="sub-item">Doctor Schedule</a>
+          <a href="" class="sub-item">Performance History</a>
+        </div>
+      </div>
+
+      <!-- Payments -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-wallet"></i>Payments
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Pending Payments</a>
+          <a href="" class="sub-item">Payment History</a>
+        </div>
+        
+      </div>
+
+        <!-- Room Allotments -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-bed"></i>Room Allotments
+          <!-- Dropdown bar-->
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">Allotted Rooms</a>
+          <a href="" class="sub-item">New Allotment</a>
+          <a href="" class="sub-item">Available Rooms</a>
+          <a href="" class="sub-item">Under Maintenance</a>
+        </div>
+        
+      </div>
+    
+
+      <!-- Settings -->
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-gear"></i>Settings</a></div>
+      </div>
+  </div>
+
+    <!-- top bar -->
+    <div class="container">
+    
+    </div>
+
+
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+  <script>
+    // jquery for sub-menus
+    $('.sub-btn').click(function(){
+      $(this).next('.sub-menu').slideToggle();
+      $(this).find('.dropdown').toggleClass('rotate');
+    })
+  </script>
+
+</body>
+</html>
