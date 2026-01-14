@@ -81,7 +81,10 @@ Contributions are welcome! Steps:
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
+## IMPORTANT NOTICE 
+This project is still under development so yeah its prototype so, some features may not work.
 
+---
 ## Contact
 - **Maintainer:** Brabim Gautam
 - **Email:** brabim03@icloud.com
